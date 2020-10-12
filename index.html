@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<title><b>softtouch.inc</b></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", blackletter}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:30px">Close Menu</a>
+  <div class="w3-container">
+    <img src="C:\Users\segun\Desktop\images\logo.jpg" style="width:100%">
+
+    <h3 class="w3-padding-64"><b>Softtouch<br>Interiors</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#Picture Gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Picture Gallery</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#About Us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Us</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact Us" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="Picture Gallery">
+    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Picture Gallery.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="C:\Users\segun\Desktop\images\bayclub.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <img src="C:\Users\segun\Desktop\images\queen room.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
+      <img src="C:\Users\segun\Desktop\images\lobby.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
+    </div>
+
+    <div class="w3-half">
+      <img src="\Users\segun\Desktop\images\villa.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
+      <img src="\Users\segun\Desktop\images\livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
+      <img src="\Users\segun\Desktop\images\sittingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>We are an interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Offers luxurious yet practical interiors, through our flexible service offerings at every budget level. We tailor our design services to suit the needs of our clientele, which includes people from all walks of life: Families with kids at home, bachelors, empty-nesters, CEO's, busy professionals, entrepreneurs, and newly-weds. We enjoy working with clients at every milestone in life, and every budget level.
+    </p>
+      <p>Whether you're interested in decorating your entire home  or redecorating just one room, our talented design staff has years of experience in interior design and project management.  We treat your home individually, providing you with the best ideas in space planning, materials and finishes, furniture, wall colors, textiles, window coverings, flooring, accessories and styling. It is our pleasure to come to your home to better understand your style and your specific design needs. We then put it all together for you, beautifully.
+    </p>
+    <p>We Offer Several Services For Every Budget Level:
+
+ 
+
+<p>Full Service Residential Design</p>
+
+<p>Commercial Office Interiors</p>
+
+<p>New Construction, Model Homes</p>
+
+<p>Multi-family Remodels</p>
+
+<p>Clubhouses & Amenity Centers</p>
+
+<p>Kitchen & Bath Remodels</p>
+
+<p>Home Staging</p>
+
+<p>eDesign</p>
+
+<p>One Day Makeovers & Organizing</p>
+
+<p>Color Consultation</p>
+
+<p>Window Treatments</p>
+
+<p>Custom Drapery & Other Soft Furnishings</p>
+
+<p>Design Concierge Service</p>
+
+<p>Designer On Call and Art Curation</p>
+
+<p>Private Decor Coaching Through Video Conferencing</p>
+
+Room Palettes - Color Palettes & Soft Furnishings Selection
+</p>
+  </div>
+  
+  <!-- About Us -->
+  <div class="w3-container" id="About Us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>About Us.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>hey there! 
+
+I am Oluwasegun, Owner and Principal Designer here at Softtouch Interiors. <br>Thank you for stopping by!</br> There is a reason you ended up here, and whatever it is, we are here to help
+
+​
+
+<p>Do any of these scenarios sound like you?</p>
+
+​
+
+        <p>You desperately desire a beautiful, functional and comfortable home, but it seems impossible</p>
+
+        <p>You feel overwhelmed by Houzz, Pinterest and all the other resources out there</p>
+
+        <p>You have no idea where to start with your decorating, or how to hire a designer</p>
+
+        <p>You worry about decorating a home with kids and pets in tow</p>
+
+        <p>You need a design professional who is flexible and will make the process simple</p> 
+
+        <p>You want a luxurious home, but still be practical for everyday living</p>
+
+​
+
+You are definitely in the right place. Creating luxuriously practical homes is what we do. Offering flexible design services that address every budget level is our mission
+
+​
+
+We  get it, you know what you love, and what you don't love, so you wonder why is it so hard to achieve the designer looks you see in magazines and online. Picking out individual furniture pieces is actually not that hard for you, yet you have a space that looks unfinished and incohesive. You are quickly realizing that designing a space is perhaps not as easy as it looks on TV. You are ready to get some help, but where do you begin?
+
+​
+
+Instead of wasting more time surfing the internet for ideas, or spending your weekends furniture shopping, or worst yet, spending more money on furnishings that are the wrong fit, or that do not hold up to the wear and tear of your busy household, it is time to make the call. With our flexible menu of design services that works for every budget, we will have a service to fit your needs
+
+
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div>
+        <img src="C:\Users\segun\Desktop\images\c++.jpg" alt="Oluwasegun" style="width:90%">
+        <div class="w3-container">
+          <h3>Oluwasegun Ogundele</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div>
+        <img src="C:\Users\segun\Desktop\images\jane.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div>
+        <img src="C:\Users\segun\Desktop\images\mike.jpg" alt="Mike" style="width:90%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-blue w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact Us" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact Us.</b></h1>
+    <hr style="width:50px;border:5px solid blue" class="w3-round">
+    <p>710 Hargest street<br>prairie view, Texas, 77445.</br>345-899-8690</p>
+      
+    </p>
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- soft.media Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.google.com" title="soft.media" target="_blank" class="w3-hover-opacity">soft.media</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
